@@ -11,10 +11,15 @@ namespace AdventOfCode_TheFloorWillBeLava_Day16.Models
         public string Character {  get; set; }
         public Coordinates Coordinates { get; set; }
 
+        public bool IsRightVisited { get; set; }
+        public bool IsLeftVisited { get; set; }
+
         public Symbol(string characer, Coordinates coordinates)
         {
             Character = characer;
             Coordinates = coordinates;
+            IsRightVisited = false;
+            IsLeftVisited = false;
         }
     }
 }

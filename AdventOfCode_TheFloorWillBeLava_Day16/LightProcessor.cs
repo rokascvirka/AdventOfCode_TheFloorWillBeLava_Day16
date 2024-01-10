@@ -15,8 +15,14 @@ namespace AdventOfCode_TheFloorWillBeLava_Day16
         public static void UpdateLightMap(LightMapModel map, string direction)
         {
             var start = new Coordinates(0, 0);
+            var IsThereAnyPlaceToMove = true;
+
+
+            List<Coordinates> currentDirections = new List<Coordinates>();
+            
         }
 
+        private static void Start()
 
         private static void MoveDown(LightMapModel map, string direction)
         {
