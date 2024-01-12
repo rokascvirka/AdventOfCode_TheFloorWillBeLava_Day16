@@ -16,6 +16,7 @@ namespace AdventOfCode_TheFloorWillBeLava_Day16.Models
         public LightMapModel()
         {
             Map = new List<List<Symbol>>();
+            UpdatedMap = new List<List<Symbol>>();
         }
     }
 }

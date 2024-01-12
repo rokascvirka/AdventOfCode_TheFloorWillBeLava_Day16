@@ -13,6 +13,8 @@ namespace AdventOfCode_TheFloorWillBeLava_Day16.Models
 
         public bool IsRightVisited { get; set; }
         public bool IsLeftVisited { get; set; }
+        public bool IsTopVisited { get; set; }
+        public bool IsBottomVisited { get; set; }
 
         public Symbol(string characer, Coordinates coordinates)
         {
@@ -20,6 +22,16 @@ namespace AdventOfCode_TheFloorWillBeLava_Day16.Models
             Coordinates = coordinates;
             IsRightVisited = false;
             IsLeftVisited = false;
+            IsTopVisited = false;
+            IsBottomVisited = false;
+        }
+        public Symbol(Coordinates coordinates)
+        {
+            Coordinates = coordinates;
+            IsRightVisited = false;
+            IsLeftVisited = false;
+            IsTopVisited = false;
+            IsBottomVisited = false;
         }
     }
 }
